@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #09090b; /* zinc-950 */
+  color: #fafafa; /* zinc-50 */
+  selection-background-color: rgba(99, 102, 241, 0.3); /* indigo-500/30 */
+}
+
+/* Custom selection styling */
+::selection {
+  background-color: rgba(99, 102, 241, 0.3); /* indigo-500/30 */
+}
+
+/* Custom scrollbars for clean dashboards */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a; /* zinc-800 */
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46; /* zinc-700 */
+}
+
+/* --- Elegant Dark Theme Overrides --- */
+
+/* App Wrapper & Loading */
+#billing-platform-app {
+  background-color: #09090b !important;
+  color: #fafafa !important;
+}
+
+#router-loading,
+#customer-loading,
+#admin-loading {
+  background-color: #09090b !important;
+  color: #fafafa !important;
+}
+
+/* Background overrides */
+.bg-slate-50, 
+.bg-slate-900,
+.bg-slate-950,
+#customer-panel,
+#admin-panel {
+  background-color: #09090b !important;
+}
+
+.bg-white {
+  background-color: #0c0c0e !important;
+}
+
+aside {
+  background-color: #0c0c0e !important;
+  border-color: #27272a !important;
+}
+
+/* Modal boxes and popovers */
+.fixed.inset-0.bg-slate-950\/60 {
+  background-color: rgba(9, 9, 11, 0.8) !important;
+}
+
+/* Inner block containers (e.g., code snippets, invoice breakdowns) */
+.bg-slate-50.p-4.rounded-2xl,
+.bg-slate-50.p-6,
+.bg-slate-50.rounded-xl,
+.bg-slate-900\/60,
+.bg-slate-900\/40,
+thead.bg-slate-50\/60,
+.bg-slate-850 {
+  background-color: #18181b !important;
+}
+
+/* Borders */
+.border,
+.border-t,
+.border-b,
+.border-r,
+.border-l,
+.border-slate-100,
+.border-slate-150,
+.border-slate-200,
+.border-slate-300,
+.border-slate-800,
+.divide-slate-100,
+.divide-slate-800 {
+  border-color: #27272a !important;
+}
+
+/* Text overrides for Elegant Dark readability */
+.text-slate-950,
+.text-slate-900,
+.text-slate-800,
+.text-slate-700,
+.text-zinc-900,
+.text-zinc-800 {
+  color: #fafafa !important;
+}
+
+.text-slate-600,
+.text-slate-500,
+.text-zinc-600,
+.text-zinc-500 {
+  color: #a1a1aa !important;
+}
+
+.text-slate-400,
+.text-zinc-400 {
+  color: #71717a !important;
+}
+
+/* Input elements styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  background-color: #09090b !important;
+  border-color: #27272a !important;
+  color: #fafafa !important;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #52525b !important;
+}
+
+/* Active tabs / buttons in sidebar and menus */
+.bg-indigo-50 {
+  background-color: rgba(99, 102, 241, 0.1) !important;
+  border-color: rgba(99, 102, 241, 0.2) !important;
+}
+
+.text-indigo-600 {
+  color: #818cf8 !important; /* Indigo-400 */
+}
+
+.text-indigo-800 {
+  color: #a5b4fc !important; /* Indigo-300 */
+}
+
+.text-indigo-900 {
+  color: #c7d2fe !important; /* Indigo-200 */
+}
+
+.border-indigo-100 {
+  border-color: rgba(99, 102, 241, 0.25) !important;
+}
+
+/* Hover effects for dark mode consistency */
+.hover\:bg-slate-50:hover,
+.hover\:bg-slate-100:hover,
+.hover\:bg-slate-200:hover {
+  background-color: #27272a !important;
+}
+
+.hover\:text-slate-800:hover,
+.hover\:text-slate-900:hover {
+  color: #ffffff !important;
+}
+
+/* Slate buttons (like Cancel or Turn Off Auto-Renewal) */
+.bg-slate-100 {
+  background-color: #27272a !important;
+  color: #fafafa !important;
+}
+
+.hover\:bg-slate-200:hover {
+  background-color: #3f3f46 !important;
+}
+
+.bg-slate-50.p-2\.5 {
+  background-color: #18181b !important;
+  border-color: #27272a !important;
+}
+
+/* Green status tag */
+.bg-emerald-50 {
+  background-color: rgba(16, 185, 129, 0.1) !important;
+  border-color: rgba(16, 185, 129, 0.2) !important;
+}
+
+.text-emerald-600 {
+  color: #34d399 !important; /* emerald-400 */
+}
+
+.border-emerald-100 {
+  border-color: rgba(16, 185, 129, 0.2) !important;
+}
+
+/* Red status tag */
+.bg-rose-50 {
+  background-color: rgba(244, 63, 94, 0.1) !important;
+  border-color: rgba(244, 63, 94, 0.2) !important;
+}
+
+.text-rose-500,
+.text-rose-600 {
+  color: #fb7185 !important; /* rose-400 */
+}
+
+.border-rose-100 {
+  border-color: rgba(244, 63, 94, 0.2) !important;
+}
+
+/* Amber status tag */
+.bg-amber-50 {
+  background-color: rgba(245, 158, 11, 0.1) !important;
+  border-color: rgba(245, 158, 11, 0.2) !important;
+}
+
+.text-amber-600 {
+  color: #fbbf24 !important; /* amber-400 */
+}
+
+.border-amber-100 {
+  border-color: rgba(245, 158, 11, 0.2) !important;
+}
+
+/* Tables, headers, grid lines */
+table {
+  background-color: #0c0c0e !important;
+}
+
+tr.hover\:bg-slate-900\/40:hover,
+tr.hover\:bg-slate-800\/20:hover {
+  background-color: rgba(39, 39, 42, 0.3) !important;
+}
+
+/* Invoice list divider */
+tbody.divide-slate-100 {
+  border-color: #27272a !important;
+}
+
+/* Charts and components */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #27272a !important;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "SaaS Subscription Billing Platform",
+  "description": "An enterprise-grade SaaS subscription billing and revenue analytics platform similar to Stripe Billing, with fully functional dashboards for both customers and admins, tax/discount calculation, coupon systems, and dynamic usage tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  billing-platform:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: saas_billing_platform
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - JWT_SECRET=billing_super_secret_jwt_key_2026
+    restart: always
